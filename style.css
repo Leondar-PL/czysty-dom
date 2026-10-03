@@ -1,0 +1,1174 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #1f2933;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    height: 72px;
+    background-color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 60px;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: 700;
+    color: #1677ff;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #374151;
+    font-size: 15px;
+    font-weight: 600;
+
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #1677ff;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 620px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #edf5ff 0%,
+            #ffffff 70%
+        );
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-small {
+    color: #1677ff;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    line-height: 1.08;
+
+    color: #17202a;
+}
+
+.hero-description {
+    max-width: 620px;
+
+    margin: 24px auto 0;
+
+    font-size: 19px;
+    line-height: 1.7;
+
+    color: #59636e;
+}
+
+.hero-button {
+    display: inline-block;
+
+    margin-top: 32px;
+
+    padding: 14px 28px;
+
+    background-color: #1677ff;
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    border-radius: 6px;
+
+    transition: 0.2s;
+}
+
+.hero-button:hover {
+    background-color: #0d5dcc;
+    transform: translateY(-2px);
+}
+
+.hero-phone {
+    display: block;
+
+    margin-top: 16px;
+
+    color: #4b5563;
+
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.hero-phone:hover {
+    color: #1677ff;
+}
+
+
+/* =========================
+   USŁUGI
+========================= */
+
+#uslugi {
+    padding: 90px 60px;
+
+    background-color: #ffffff;
+
+    text-align: center;
+}
+
+#uslugi h2,
+#dlaczego-my h2,
+#cennik h2,
+#kontakt h2 {
+    font-size: 34px;
+
+    color: #17202a;
+
+    margin-bottom: 45px;
+}
+
+.uslugi-container {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 24px;
+
+    flex-wrap: wrap;
+}
+
+.karta {
+    width: 300px;
+
+    padding: 32px 28px;
+
+    background-color: #f8fafc;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 8px;
+
+    transition: 0.2s;
+}
+
+.karta h3 {
+    font-size: 20px;
+
+    margin-bottom: 14px;
+}
+
+.karta p {
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    color: #66717c;
+}
+
+.karta:hover {
+    transform: translateY(-4px);
+
+    border-color: #cbd5e1;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+
+/* =========================
+   DLACZEGO MY
+========================= */
+
+#dlaczego-my {
+    padding: 90px 60px;
+
+    background-color: #f4f6f8;
+
+    text-align: center;
+}
+
+.zalety-container {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 24px;
+
+    flex-wrap: wrap;
+}
+
+.zaleta {
+    width: 280px;
+
+    padding: 30px 25px;
+
+    background-color: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 8px;
+}
+
+.zaleta-ikona {
+    font-size: 32px;
+
+    margin-bottom: 16px;
+}
+
+.zaleta h3 {
+    font-size: 20px;
+
+    margin-bottom: 12px;
+}
+
+.zaleta p {
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    color: #66717c;
+}
+
+
+/* =========================
+   CENNIK
+========================= */
+
+#cennik {
+    padding: 90px 60px;
+
+    background-color: white;
+
+    text-align: center;
+}
+
+.cennik-container {
+    display: flex;
+
+    justify-content: center;
+    align-items: stretch;
+
+    gap: 28px;
+
+    flex-wrap: wrap;
+}
+
+.cena {
+    width: 300px;
+
+    min-height: 315px;
+
+    padding: 32px 25px;
+
+    background-color: #f8fafc;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 8px;
+
+    position: relative;
+
+    transition: 0.2s;
+}
+
+.cena:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.cena h3 {
+    font-size: 21px;
+
+    margin-bottom: 18px;
+}
+
+.kwota {
+    font-size: 29px;
+
+    font-weight: 700;
+
+    color: #1677ff;
+
+    margin: 15px 0;
+}
+
+.cena p:not(.kwota) {
+    color: #66717c;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   POLECANA OFERTA
+========================= */
+
+.polecana {
+    border: 2px solid #1677ff;
+}
+
+.odznaka {
+    position: absolute;
+
+    top: -14px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background-color: #1677ff;
+    color: white;
+
+    padding: 6px 14px;
+
+    border-radius: 15px;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+/* =========================
+   PRZYCISKI
+========================= */
+
+button {
+    padding: 13px 26px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background-color: #1677ff;
+    color: white;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #0d5dcc;
+
+    transform: translateY(-2px);
+}
+
+.cena button {
+    margin-top: 24px;
+}
+
+
+/* =========================
+   KONTAKT
+========================= */
+
+#kontakt {
+    padding: 90px 20px;
+
+    background-color: #f4f6f8;
+
+    text-align: center;
+}
+
+#formularz {
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 13px;
+}
+
+#formularz label {
+    text-align: left;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    color: #374151;
+
+    margin-top: 5px;
+}
+
+#formularz input,
+#formularz textarea {
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid #d6dbe1;
+
+    border-radius: 6px;
+
+    background-color: white;
+
+    font-size: 16px;
+
+    font-family: Arial, sans-serif;
+
+    transition: 0.2s;
+}
+
+#formularz input:focus,
+#formularz textarea:focus {
+    outline: none;
+
+    border-color: #1677ff;
+
+    box-shadow: 0 0 0 2px rgba(22, 119, 255, 0.1);
+}
+
+#formularz textarea {
+    height: 150px;
+
+    resize: vertical;
+}
+
+#formularz button {
+    margin-top: 10px;
+}
+
+#komunikat {
+    margin-top: 15px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #20252b;
+
+    color: white;
+
+    padding: 55px 20px 25px;
+
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    gap: 80px;
+}
+
+.footer-content div {
+    max-width: 250px;
+}
+
+.footer-content h3 {
+    margin-bottom: 14px;
+
+    font-size: 18px;
+}
+
+.footer-content p {
+    color: #b9c0c7;
+
+    margin-bottom: 7px;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+.copyright {
+    margin-top: 45px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #3b424a;
+}
+
+.copyright p {
+    margin: 0;
+
+    color: #929aa3;
+}
+
+
+/* =========================
+   TELEFON
+========================= */
+
+@media (max-width: 768px) {
+
+    header {
+        height: auto;
+
+        padding: 18px 20px;
+
+        flex-direction: column;
+
+        gap: 18px;
+    }
+
+    nav {
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 13px;
+    }
+
+    .hero {
+        min-height: 550px;
+
+        padding: 70px 20px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero-description {
+        font-size: 17px;
+    }
+
+    #uslugi,
+    #dlaczego-my,
+    #cennik,
+    #kontakt {
+        padding: 70px 20px;
+    }
+
+    #uslugi h2,
+    #dlaczego-my h2,
+    #cennik h2,
+    #kontakt h2 {
+        font-size: 29px;
+    }
+
+    .karta,
+    .zaleta,
+    .cena {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 30px;
+    }
+}
+/* =========================
+   OPINIE
+========================= */
+
+#opinie {
+    padding: 90px 60px;
+
+    background-color: #f4f6f8;
+
+    text-align: center;
+}
+
+#opinie h2 {
+    font-size: 34px;
+
+    color: #17202a;
+
+    margin-bottom: 45px;
+}
+
+.opinie-container {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 24px;
+
+    flex-wrap: wrap;
+}
+
+.opinia {
+    width: 300px;
+
+    padding: 30px;
+
+    background-color: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 8px;
+
+    text-align: left;
+}
+
+.gwiazdki {
+    color: #f5a623;
+
+    font-size: 18px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 18px;
+}
+
+.opinia p {
+    color: #59636e;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+}
+
+.opinia h3 {
+    font-size: 16px;
+
+    margin-bottom: 5px;
+}
+
+.opinia span {
+    color: #8a939c;
+
+    font-size: 13px;
+}
+/* =========================
+   MENU MOBILNE
+========================= */
+
+.menu-toggle {
+    display: none;
+
+    background: none;
+    color: #17202a;
+
+    border: none;
+
+    font-size: 28px;
+
+    padding: 5px;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   TELEFON - MENU
+========================= */
+
+@media (max-width: 768px) {
+
+    header {
+        position: sticky;
+
+        padding: 15px 20px;
+
+        flex-direction: row;
+
+        justify-content: space-between;
+
+        gap: 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        display: none;
+
+        position: absolute;
+
+        top: 72px;
+        left: 0;
+
+        width: 100%;
+
+        padding: 20px;
+
+        background-color: white;
+
+        border-top: 1px solid #e5e7eb;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 18px;
+    }
+
+    nav.otwarte {
+        display: flex;
+    }
+
+}
+/* =========================
+   JAK TO DZIAŁA
+========================= */
+
+#jak-to-dziala {
+    padding: 90px 60px;
+
+    background-color: #ffffff;
+
+    text-align: center;
+}
+
+#jak-to-dziala h2 {
+    font-size: 34px;
+
+    color: #17202a;
+
+    margin-bottom: 45px;
+}
+
+.kroki-container {
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+.krok {
+    width: 280px;
+
+    padding: 25px;
+
+    text-align: left;
+}
+
+.numer {
+    color: #1d9b12;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    margin-bottom: 15px;
+}
+
+.krok h3 {
+    font-size: 20px;
+
+    margin-bottom: 12px;
+}
+
+.krok p {
+    color: #66717c;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+@media (max-width: 768px) {
+
+    #jak-to-dziala {
+        padding: 70px 20px;
+    }
+
+    #jak-to-dziala h2 {
+        font-size: 29px;
+    }
+
+    .krok {
+        width: 100%;
+        max-width: 350px;
+    }
+
+}
+/* =========================
+   MOTYW CIEMNY / JASNY
+========================= */
+
+.theme-toggle {
+    width: 42px;
+    height: 42px;
+
+    padding: 0;
+
+    background-color: #f4f6f8;
+    color: #17202a;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 50%;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.2s;
+}
+
+.theme-toggle:hover {
+    transform: none;
+    background-color: #e9edf1;
+}
+
+
+/* =========================
+   CIEMNY MOTYW
+========================= */
+
+body.dark {
+    background-color: #111827;
+    color: #e5e7eb;
+}
+
+body.dark header {
+    background-color: #171e2b;
+    border-color: #293241;
+}
+
+body.dark nav a {
+    color: #d1d5db;
+}
+
+body.dark nav a:hover {
+    color: #60a5fa;
+}
+
+body.dark .hero {
+    background: #111827;
+}
+
+body.dark .hero h1,
+body.dark #uslugi h2,
+body.dark #dlaczego-my h2,
+body.dark #cennik h2,
+body.dark #kontakt h2,
+body.dark #opinie h2,
+body.dark #jak-to-dziala h2 {
+    color: #f9fafb;
+}
+
+body.dark .hero-description,
+body.dark .karta p,
+body.dark .zaleta p,
+body.dark .cena p:not(.kwota),
+body.dark .opinia p,
+body.dark .krok p {
+    color: #aeb7c4;
+}
+
+body.dark #uslugi,
+body.dark #cennik,
+body.dark #jak-to-dziala {
+    background-color: #151c28;
+}
+
+body.dark #dlaczego-my,
+body.dark #kontakt,
+body.dark #opinie {
+    background-color: #111827;
+}
+
+body.dark .karta,
+body.dark .zaleta,
+body.dark .cena,
+body.dark .opinia {
+    background-color: #1b2432;
+    border-color: #303b4c;
+}
+
+body.dark .karta:hover,
+body.dark .cena:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+body.dark #formularz label {
+    color: #d1d5db;
+}
+
+body.dark #formularz input,
+body.dark #formularz textarea {
+    background-color: #1b2432;
+    color: #f9fafb;
+    border-color: #3a4658;
+}
+
+body.dark .theme-toggle {
+    background-color: #252f3e;
+    border-color: #3a4658;
+}
+
+body.dark .hero-phone {
+    color: #c0c8d2;
+}
+
+body.dark .hero-phone:hover {
+    color: #60a5fa;
+}
+
+
+/* =========================
+   MENU MOBILNE W DARK MODE
+========================= */
+
+body.dark nav {
+    background-color: #171e2b;
+    border-color: #293241;
+}
+
+body.dark .menu-toggle span {
+    background-color: #f9fafb;
+}
+
+
+@media (max-width: 768px) {
+
+    .theme-toggle {
+        width: 38px;
+        height: 38px;
+        font-size: 16px;
+    }
+
+}
+/* =========================
+   REALIZACJE
+========================= */
+
+#realizacje {
+    padding: 90px 60px;
+
+    background-color: #f4f6f8;
+
+    text-align: center;
+}
+
+#realizacje h2 {
+    font-size: 34px;
+
+    color: #17202a;
+
+    margin-bottom: 15px;
+}
+
+.realizacje-opis {
+    color: #66717c;
+
+    font-size: 16px;
+
+    margin-bottom: 45px;
+}
+
+.realizacje-container {
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 24px;
+
+    flex-wrap: wrap;
+}
+
+.realizacja {
+    width: 300px;
+
+    background-color: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    text-align: left;
+
+    transition: 0.2s;
+}
+
+.realizacja:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.realizacja-obraz {
+    height: 180px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 60px;
+}
+
+.obraz-1 {
+    background-color: #eaf3ff;
+}
+
+.obraz-2 {
+    background-color: #eef8f1;
+}
+
+.obraz-3 {
+    background-color: #f4efff;
+}
+
+.realizacja-info {
+    padding: 22px;
+}
+
+.realizacja-info h3 {
+    font-size: 20px;
+
+    margin-bottom: 8px;
+}
+
+.realizacja-info p {
+    color: #66717c;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* DARK MODE */
+
+body.dark #realizacje {
+    background-color: #111827;
+}
+
+body.dark #realizacje h2 {
+    color: #f9fafb;
+}
+
+body.dark .realizacje-opis {
+    color: #aeb7c4;
+}
+
+body.dark .realizacja {
+    background-color: #1b2432;
+    border-color: #303b4c;
+}
+
+body.dark .realizacja-info p {
+    color: #aeb7c4;
+}
+
+body.dark .obraz-1 {
+    background-color: #20334d;
+}
+
+body.dark .obraz-2 {
+    background-color: #203b2d;
+}
+
+body.dark .obraz-3 {
+    background-color: #34294a;
+}
+
+
+@media (max-width: 768px) {
+
+    #realizacje {
+        padding: 70px 20px;
+    }
+
+    #realizacje h2 {
+        font-size: 29px;
+    }
+
+    .realizacja {
+        width: 100%;
+        max-width: 350px;
+    }
+
+}
